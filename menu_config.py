@@ -32,5 +32,5 @@ if _BUNDLE_HINTS:
     import dance_party
 
 MENU_ITEMS = [
-    {"display": 1, "module": "dance_party"},
+    {"display": 1, "module": "dance_party", "function": "run"},
 ]
