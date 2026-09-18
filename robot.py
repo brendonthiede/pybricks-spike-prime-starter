@@ -23,7 +23,7 @@ from pybricks.robotics import DriveBase
 # Which port is each wheel motor plugged into?
 # If your robot drives backward when you tell it to go forward,
 # swap CLOCKWISE and COUNTERCLOCKWISE below.
-LEFT_WHEEL_PORT = Port.A
+LEFT_WHEEL_PORT = Port.F
 LEFT_WHEEL_DIRECTION = Direction.COUNTERCLOCKWISE
 RIGHT_WHEEL_PORT = Port.B
 RIGHT_WHEEL_DIRECTION = Direction.CLOCKWISE
@@ -44,7 +44,7 @@ ATTACHMENT_2_PORT = None  # e.g. Port.C if you add a second one
 
 # --- Sensors ---
 # Set the port for any sensor your robot has, or None if you don't have it.
-COLOR_SENSOR_PORT = None  # e.g. Port.E
+COLOR_SENSOR_PORT = Port.A  # e.g. Port.E
 DISTANCE_SENSOR_PORT = None  # the ultrasonic "eyes" sensor
 FORCE_SENSOR_PORT = None  # the push-button touch sensor
 
