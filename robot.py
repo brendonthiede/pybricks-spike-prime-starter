@@ -31,10 +31,10 @@ RIGHT_WHEEL_DIRECTION = Direction.CLOCKWISE
 # --- Robot measurements (in millimeters) ---
 # Wheel diameter is printed on the LEGO tire itself
 # (small SPIKE wheel = 56, big wheel = 88).
-WHEEL_DIAMETER_MM = 56
+WHEEL_DIAMETER_MM = 62.4
 # Axle track is the distance between the CENTERS of the two wheels,
 # measured straight across the robot. Measure yours with a ruler!
-AXLE_TRACK_MM = 114
+AXLE_TRACK_MM = 128
 
 # --- Attachment motors ---
 # Motors that move your arms, lifts, and other attachments.
