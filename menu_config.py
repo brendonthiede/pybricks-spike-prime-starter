@@ -29,8 +29,10 @@ comments inside the MENU_ITEMS list are not kept.
 # compiler and your programs would stop being uploaded.
 _BUNDLE_HINTS = False
 if _BUNDLE_HINTS:
-    import dance_party
+    import simple_1
+    import simple_2
 
 MENU_ITEMS = [
-    {"display": 1, "module": "dance_party", "function": "run"},
+    {"display": 1, "module": "simple_1"},
+    {"display": 2, "module": "simple_2"},
 ]
