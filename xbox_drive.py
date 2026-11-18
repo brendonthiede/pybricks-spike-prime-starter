@@ -52,9 +52,18 @@ def stick_to_speed(stick, max_speed):
 
 
 def run(robot):
-    # Wait here until the controller is connected.
-    print("Looking for the Xbox controller...")
-    controller = XboxController()
+    # Keep looking until the controller is connected. The hub only
+    # looks for about 10 seconds at a time, so if it doesn't find the
+    # controller we just look again.
+    controller = None
+    while controller is None:
+        print("Looking for the Xbox controller...")
+        try:
+            controller = XboxController()
+        except OSError:
+            print("Didn't find it. Is the Xbox button blinking FAST?")
+            print("Hold the pairing button on top of the controller.")
+            wait(500)
     print("Controller connected! Drive away.")
     robot.hub.speaker.beep()
 
