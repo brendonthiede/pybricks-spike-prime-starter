@@ -106,6 +106,7 @@ def run(robot):
             else:
                 # No button held: stop and hold the arm where it is,
                 # so it doesn't droop under its own weight.
+                wait(150)
                 arm.hold()
 
         # A short pause so the hub isn't checking the controller nonstop.
